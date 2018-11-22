@@ -30,6 +30,8 @@
     border-bottom-width: 4px;
     border-bottom-style: solid;
     position: relative;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 /*X de cerrar*/
