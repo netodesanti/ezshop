@@ -1,0 +1,142 @@
+﻿/*Color de fondo de modal*/
+#cloudinary-overlay.modal {
+    background-color: rgb(255, 183, 77, 0.9);
+    font-family: 'Roboto', sans-serif !important;
+}
+
+/*Cuerpo*/
+.widget {
+    display: none;
+    background-color: #fff;
+    position: fixed;
+    margin-top: -260px;
+    top: 50%;
+    /* border: 2px solid #1c385d; */
+    border: none;
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-box-shadow: 5px 5px 5px rgba(0,0,0,.3);
+    -webkit-box-shadow: 5px 5px 5px rgba(0,0,0,.3);
+    box-shadow: 5px 5px 5px rgba(0,0,0,.3);
+}
+
+    /*Header*/
+    .widget .header {
+        min-height: 51px;
+        border-color: #FFB64D;
+        background-color: #26C6DA;
+        border-bottom-width: 4px;
+        border-bottom-style: solid;
+        position: relative;
+    }
+
+        /*X de cerrar*/
+        .widget .header .close {
+            position: absolute;
+            top: 2px;
+            right: 8px;
+            font-size: 26px;
+            line-height: 29px;
+            color: #F66;
+            display: block;
+            text-decoration: none;
+            /* text-shadow: 1px 1px 3px #fff; */
+            text-shadow: none;
+        }
+
+        /*Pestañas*/
+        .widget .header .sources .source {
+            background-color: #fff;
+            width: 85px;
+            /* color: #fff; */
+            border-right: 1px dashed #FFB64D;
+            float: left;
+            height: 51px;
+            text-align: center;
+            position: relative;
+            cursor: pointer;
+        }
+
+            /*Pestaña activa*/
+            .widget .header .sources .source.active {
+                background-color: #FFB64D;
+            }
+
+    /*Boton*/
+    .widget .button {
+        color: #fefeff;
+        font-size: 24px;
+        line-height: 34px;
+        border-radius: 6px;
+        -moz-border-radius: 6px;
+        -webkit-border-radius: 6px;
+        font-weight: 400;
+        text-decoration: none;
+        display: inline-block;
+        padding: 7px 30px 4px 30px;
+        background: none;
+        background-color: #FFB64D;
+        /*
+    background: -moz-linear-gradient(top,#0284cf 0,#02598b 100%);
+    background: -o-linear-gradient(top,#0284cf 0,#02598b 100%);
+    background: -ms-linear-gradient(top,#0284cf 0,#02598b 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0284cf', endColorstr='#02598b', GradientType=0 );*/
+    }
+
+        /*Hover de los botones*/
+        .widget .button:hover, .widget .upload_button_holder:hover .button {
+            background: none;
+            background: #FFB64D;
+            /* background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJod…EiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+); */
+            /*background: -moz-linear-gradient(top,#02598b 0,#0284cf 100%);
+    /* background: -webkit-gradient(linear,left top,left bottom,color-stop(0,#02598b),color-stop(100%,#0284cf)); */
+            /* background: -webkit-linear-gradient(top,#02598b 0,#FF6600 100%); 
+    background: -o-linear-gradient(top,#02598b 0,#0284cf 100%);
+    background: -ms-linear-gradient(top,#02598b 0,#0284cf 100%);
+    /* background: linear-gradient(to bottom,#02598b 0,#0284cf 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#02598b', endColorstr='#0284cf', GradientType=0 );*/
+        }
+
+    /*Bordes de rayas donde se arrastra la imagen*/
+    .widget .panel.local .drag_area {
+        height: 325px;
+        border: 2px dashed #FFB64D;
+        background-color: #f6f8fb;
+        margin: 60px;
+    }
+
+        /*Arrastre su imagen...*/
+        .widget .panel.local .drag_area .drag_content .label {
+            display: block;
+            color: #FFB64D;
+            font-size: 28px;
+            line-height: 35px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* O en el medio*/
+        .widget .panel.local .drag_area .drag_content .or {
+            display: block;
+            text-align: center;
+            font-size: 18px;
+            line-height: 23px;
+            color: #FFB64D;
+            margin-bottom: 20px;
+        }
+
+    /*Contenedor de boton "Seleccione una imagen/Select File"*/
+    .widget .panel.local .upload_button_holder {
+        position: relative;
+        display: inline-block;
+        width: 311px;
+        height: 45px;
+        overflow: hidden;
+        cursor: pointer;
+    }
+
+        /*Link dentor de boton "Seleccione una imagen/Select File"*/
+        .widget .panel.local .upload_button_holder .select_file {
+            width: 250px;
+        }
