@@ -2,6 +2,7 @@
 #cloudinary-overlay.modal {
     background-color: rgb(255, 183, 77, 0.9);
     font-family: 'Roboto', sans-serif !important;
+    border-radius: 20px;
 }
 
 /*Cuerpo*/
@@ -60,7 +61,7 @@
 
 /*Pestaña activa*/
 .widget .header .sources .source.active {
-    background-color: #FFB64D;
+    background-color: #26C6DA;
 }
 
 /*Boton*/
